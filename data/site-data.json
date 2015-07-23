@@ -1,0 +1,50 @@
+{
+
+  "about": {
+    "templateUrl": "/about-me.html",
+    "data": null
+  },
+  "education": {
+    "templateUrl": "/education.html",
+    "data": null
+  },
+  "skills": {
+    "templateUrl": "/skills.html",
+    "data": [
+        {
+          "category": "Core Languages",
+          "data": [
+              {
+               "name": "C / C++",
+               "value": "80%"
+              }
+            ]
+        }
+      ]
+  },
+  "experience":{
+    "templateUrl": "/experience.html",
+    "data": [
+        {
+          "post": "Trainee Software Engineer",
+          "org": "Global Logic, Noida",
+          "orgurl": "globallogic.com",
+          "from": "July 2014",
+          "to": "Dec 2014",
+          "desc": "Some text here"
+        }
+      ]
+  },
+  "cv": {
+    "templateUrl": "/resume.html",
+    "data": null
+  },
+  "extra-curricular": {
+    "templateUrl": "/extra-curricular.html",
+    "data": null
+  },
+  "projects":{
+    "templateUrl": "/projects.html",
+    "data": null
+  }
+}
