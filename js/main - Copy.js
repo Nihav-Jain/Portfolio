@@ -28,7 +28,7 @@ function addClickListener()
 		$('.skel-panels-ignoreHref').removeClass('active');
 		$(this).addClass('active');
 		parentNameStack.push($(this).children().html());
-		//console.log($(this).children().html());
+		//// console.log($(this).children().html());
 		getMenuItems($(this).data('id'));
 	});
 }
@@ -39,7 +39,7 @@ function getMenuItems(parentid)
 		
 		if(json.length == 0)
 		{
-			//console.log("no child");
+			//// console.log("no child");
 			parentNameStack.pop();
 			getMenuDesc(parentid);
 			return;

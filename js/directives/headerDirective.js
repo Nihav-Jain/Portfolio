@@ -8,7 +8,7 @@ portfolioApp.directive('headerDirective',[function() {
       replace: 'true',
       templateUrl:'views/header.html',
       controller: function($scope, $element, $state) {
-        console.log("headerdirective");
+        // console.log("headerdirective");
       }
   };
 }]);

@@ -8,7 +8,7 @@ portfolioApp.directive('menuDirective',[function() {
       replace: 'true',
       templateUrl:'views/menu.html',
       controller: function($scope, $element, $state) {
-        console.log("menudirective");
+        // console.log("menudirective");
       }
   };
 }]);

@@ -1,0 +1,114 @@
+{
+	"skills": [
+		{
+			"name": "Core Languages",
+			"skills": [
+				{
+					"name": "C / C++",
+					"value": "70%"
+				},
+				{
+					"name": "Java",
+					"value": "90%"
+				},
+				{
+					"name": "Python",
+					"value": "60%"
+				}
+			]
+		},
+		{
+			"name": "Games / Graphics / Animation",
+			"skills": [
+				{
+					"name": "Adobe Flash / ActionScript 3.0",
+					"value": "90%"
+				},
+				{
+					"name": "Adobe Photoshop",
+					"value": "50%"
+				},
+				{
+					"name": "Box2D Physics Engine",
+					"value": "70%"
+				},
+				{
+					"name": "Starling Framework (AS3)",
+					"value": "60%"
+				}
+			]
+		},
+		{
+			"name": "Mobile App Development",
+			"skills": [
+				{
+					"name": "Android",
+					"value": "80%"
+				},
+				{
+					"name": "iOS",
+					"value": "60%"
+				},
+				{
+					"name": "PhoneGap (Cordova)",
+					"value": "75%"
+				}
+			]
+		},
+		{
+			"name": "Web",
+			"skills": [
+				{
+					"name": "HTML5",
+					"value": "80%"
+				},
+				{
+					"name": "CSS3",
+					"value": "50%"
+				},
+				{
+					"name": "JavaScript",
+					"value": "80%"
+				},
+				{
+					"name": "AngularJS",
+					"value": "70%"
+				},
+				{
+					"name": "PHP",
+					"value": "80%"
+				},
+				{
+					"name": "Google App Scripts",
+					"value": "60%"
+				}
+			]
+		},
+		{
+			"name": "IDEs",
+			"skills": [
+				{
+					"name": "Eclipse",
+					"value": "90%"
+				},
+				{
+					"name": "Net Beans",
+					"value": "70%"
+				},
+				{
+					"name": "XCode",
+					"value": "70%"
+				}
+			]
+		},
+		{
+			"name": "Other Technical Skills",
+			"skills": [
+				{
+					"name": "OpenCV",
+					"value": "60%"
+				}
+			]
+		}
+	]
+}

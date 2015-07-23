@@ -83,9 +83,9 @@ function updateView(id){
 
 function getMenuDesc(menuid)
 {
-	//console.log(menuid);
+	//// console.log(menuid);
 	$.getJSON("php/getMenuDesc.php?menuid=" + menuid).done(function(json){
-		//console.log(json[0].menu_desc);
+		//// console.log(json[0].menu_desc);
 		if(json.length == 0)
 		{
 			//no child
@@ -103,14 +103,14 @@ function getMenuDesc(menuid)
 }
 
 function showLoader(){
-	console.log("showLoader");
+	// console.log("showLoader");
 	$('#content').hide();
 	$('#loader').show();
 	window.scrollTo(0,0);
 }
 
 function hideLoader(){
-	console.log("hideLoader");
+	// console.log("hideLoader");
 	$('#loader').hide();
 	$('#content').show();
 	window.scrollTo(0,0);
