@@ -1266,3 +1266,26 @@ pre{
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.absPos{
+    position: relative;
+    z-index: 3;
+    /*margin-top: -160%;*/
+    background-color: #34495e;
+	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.offScreenMenu{
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+	box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);
+}
+
+.offScreenMenu.open{
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}

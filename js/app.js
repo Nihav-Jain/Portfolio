@@ -52,7 +52,8 @@ var portfolioApp = angular.module('portfolioApp', ['ngRoute', 'ngResource', 'ui.
 		url: '/404',
 		templateUrl: 'views/404.html'
 	});
-
+	$urlRouterProvider.when('', '/about');
+	$urlRouterProvider.when('/', '/about');
 	$urlRouterProvider.otherwise('/404');
 });
 
