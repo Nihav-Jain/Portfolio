@@ -1,13 +1,15 @@
-<div ng-show="navViewCondition()">
-	<div id="header" class="skel-panels-fixed absPos offScreenMenu" ng-repeat="menu in menus" ng-class="{open: getMenuStatus($index)}">
+
+<!-- 
+  <div>
+	<div id="header">
 		<div class="top">
 			<div id="logo">
-				<span class="image"><img src="{{menu.logo}}"></span>
-				<h1 id="title">{{menu.title}}</h1>
-				<span ng-if="menu.byline" class="byline">{{menu.byline}}</span>
+				<span class="image"><img src="images/nj-profile.jpg"></span>
+				<h1 id="title">Nihav Jain</h1>
+				<span class="byline">Game Programmer</span>
 			</div>
 
-			<nav id="nav">
+			<nav id="nav" class="skel-panels-fixed absPos offScreenMenu" ng-repeat="menu in menus" ng-class="{open: getMenuStatus($index)}" ng-if="keepMenu($index)">
 				<ul>
 					<li ng-if="menu.back">
 						<a href="{{menu.back}}" id="back" class="skel-panels" ng-click="backClicked()">
@@ -23,4 +25,4 @@
 			</nav>
 		</div>
 	</div>
-</div>
+</div> -->

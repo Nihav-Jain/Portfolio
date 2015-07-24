@@ -24,7 +24,7 @@
 				{
 					"title": "Projects",
 					"icon": "icon icon-code",
-					"link": "#/games",
+					"link": "#/projects",
 					"nextMenu": 1
 				},
 				{
@@ -70,7 +70,7 @@
 				{
 					"title": "BISAG",
 					"icon": "icon icon-image",
-					"link": "#/projects/games"
+					"link": "#/projects/bisag"
 				},
 				{
 					"title": "Personal",
@@ -94,7 +94,7 @@
 				{
 					"title": "E-Attend",
 					"icon": "icon icon-android",
-					"link": "#/projects/under-graduate/e-attend"
+					"link": "#/projects/under-graduate/eattend"
 				},
 				{
 					"title": "Compiler Design",

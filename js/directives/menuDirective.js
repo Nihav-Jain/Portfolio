@@ -7,8 +7,13 @@ portfolioApp.directive('menuDirective',[function() {
       restrict: 'AE',
       replace: 'true',
       templateUrl:'views/menu.html',
-      controller: function($scope, $element, $state, $http) {
-        // console.log("menudirective");
+      controller: function($scope, $element, $http, $window, $anchorScroll) {
+
+        var w = angular.element($window);
+        w.bind('resize', function(){
+          $scope.$apply();
+        });
+        
         $scope.menus = [];
         $scope.activeMenuIndex = 0;
         $scope.menuStatus = [];
@@ -28,11 +33,13 @@ portfolioApp.directive('menuDirective',[function() {
             $scope.activeMenuIndex = $scope.menus[$scope.activeMenuIndex].tiles[$index].nextMenu;
             $scope.updateMenuStatus();
           }
+          $anchorScroll();
         };
 
         $scope.backClicked = function(){
           $scope.activeMenuIndex = $scope.menus[$scope.activeMenuIndex].backMenuIndex;
           $scope.updateMenuStatus();
+          $anchorScroll();
         };
 
         $scope.updateMenuStatus = function(){
@@ -44,9 +51,13 @@ portfolioApp.directive('menuDirective',[function() {
         };
 
         $scope.getMenuStatus = function($index){
+          // return $scope.menuStatus[$index];
           return $scope.menuStatus[$index] || ($index <= $scope.activeMenuIndex);
         };
 
+        $scope.navViewCondition = function(){
+          return !($window.innerWidth < 1000);
+        };
       }
   };
 }]);

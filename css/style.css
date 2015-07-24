@@ -1268,7 +1268,7 @@ pre{
 }
 
 .absPos{
-    position: absolute;
+    /*position: absolute;*/
     /*z-index: 3;*/
     /*margin-top: -160%;*/
     background-color: #34495e;
@@ -1289,7 +1289,6 @@ pre{
 	-moz-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
-
 
 #nav ul li:first-child {
     border-top: thin solid rgba(0, 0, 0, 0.1);
