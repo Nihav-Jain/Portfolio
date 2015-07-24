@@ -54,6 +54,7 @@ var portfolioApp = angular.module('portfolioApp', ['ngRoute', 'ngResource', 'ui.
 	});
 	$urlRouterProvider.when('', '/about');
 	$urlRouterProvider.when('/', '/about');
+	// $urlRouterProvider.when('/projects', '/projects/games');
 	$urlRouterProvider.otherwise('/404');
 });
 

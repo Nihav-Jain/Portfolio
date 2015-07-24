@@ -1268,8 +1268,8 @@ pre{
 }
 
 .absPos{
-    position: relative;
-    z-index: 3;
+    position: absolute;
+    /*z-index: 3;*/
     /*margin-top: -160%;*/
     background-color: #34495e;
 	-webkit-transition: -webkit-transform 0.5s;
@@ -1288,4 +1288,9 @@ pre{
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
+}
+
+
+#nav ul li:first-child {
+    border-top: thin solid rgba(0, 0, 0, 0.1);
 }

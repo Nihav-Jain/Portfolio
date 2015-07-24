@@ -1,29 +1,26 @@
-<div id="header" class="skel-panels-fixed">
-	<div class="top">
-		<!-- Logo -->
-		<div id="logo">
-			<span class="image"><img src="images/nj-profile.jpg"></span>
-			<h1 id="title">Nihav Jain</h1>
-			<span class="byline">FIEA (UCF)</span>
+<div>
+	<div id="header" class="skel-panels-fixed absPos offScreenMenu" ng-repeat="menu in menus" ng-class="{open: getMenuStatus($index)}">
+		<div class="top">
+			<div id="logo">
+				<span class="image"><img src="{{menu.logo}}"></span>
+				<h1 id="title">{{menu.title}}</h1>
+				<span ng-if="menu.byline" class="byline">{{menu.byline}}</span>
+			</div>
+
+			<nav id="nav">
+				<ul>
+					<li ng-if="menu.back">
+						<a href="{{menu.back}}" id="back" class="skel-panels" ng-click="backClicked()">
+							<span>Back</span>
+						</a>
+					</li>
+					<li ng-repeat="tile in menu.tiles">
+						<a href="{{tile.link}}" ng-click="menuTileClicked($index)" class="skel-panels">
+							<span class="{{tile.icon}}">{{tile.title}}</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-
-		<!-- Nav -->
-		<nav id="nav" data-parent="0" ng-if="!slideMenu">
-			<ul>
-				<li><a href="#/about" id="/about" data-alias="/about" data-name="About" data-id="1" class="skel-panels"><span class="icon icon-user">About</span></a></li>
-				<li><a href="#/education" id="/education" data-alias="/education" data-name="Education" data-id="2" class="skel-panels"><span class="icon icon-study">Education</span></a></li>
-				<li><a href="#/skills" id="/skills" data-alias="/skills" data-name="Skills" data-id="5" class="skel-panels"><span class="icon icon-wrench">Skills</span></a></li>
-				<li><a href="" id="/projects" data-alias="/projects" data-name="Projects" data-id="6" class="skel-panels" ng-click="projectsClicked()"><span class="icon icon-code">Projects</span></a></li>
-				<li><a href="#/experience" id="/experience" data-alias="/experience" data-name="Experience" data-id="28" class="skel-panels"><span class="icon icon-briefcase">Experience</span></a></li>
-				<li><a href="#/resume" id="/resume" data-alias="/resume" data-name="Curriculum Vitae" data-id="29" class="skel-panels"><span class="icon icon-profile">Resume</span></a></li>
-				<li><a href="#/extra-curricular" id="/extra-curricular" data-alias="/extra-curricular" data-name="Extra Curricular" data-id="30" class="skel-panels"><span class="icon icon-dribbble">Extra Curricular</span></a></li>
-			</ul>
-		</nav>
-
-
-<nav class="absPos offScreenMenu" ng-class="{open: slideMenu}" id="nav" data-parent="0">
-<ul><li><a href="#" data-id="6"><span class="icon icon-code">Projects</span></a></li><li><a href="#" id="back" data-alias="" data-name="Nihav Jain" data-id="0" class="skel-panels"><span>Back</span></a></li><li><a href="#" id="/projects/games" data-alias="/projects/games" data-name="Games" data-id="7" class="skel-panels"><span class="icon icon-steam">Games</span></a></li><li><a href="#" id="/projects/flash-as3" data-alias="/projects/flash-as3" data-name="Adobe Flash / AS3" data-id="32" class="skel-panels"><span class="icon icon-file-css">Adobe Flash / AS3</span></a></li><li><a href="#" id="/projects/under-graduate" data-alias="/projects/under-graduate" data-name="Under-Graduate" data-id="11" class="skel-panels"><span class="icon icon-study">Under-Graduate</span></a></li><li><a href="#" id="/projects/bisag" data-alias="/projects/bisag" data-name="BISAG" data-id="27" class="skel-panels"><span class="icon icon-image">BISAG</span></a></li><li><a href="#" id="/projects/personal" data-alias="/projects/personal" data-name="Personal" data-id="26" class="skel-panels"><span class="icon icon-user">Personal</span></a></li><li><a href="#" id="/projects/mobile" data-alias="/projects/mobile" data-name="Mobile App Dev" data-id="33" class="skel-panels"><span class="icon icon-mobile">Mobile App Dev</span></a></li></ul>
-</nav>		
-			
 	</div>
 </div>

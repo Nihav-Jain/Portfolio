@@ -1,0 +1,127 @@
+{
+	"menus": [
+		{
+			"title": "Nihav Jain",
+			"byline": "Game Programmer",
+			"logo": "images/nj-profile.jpg",
+			"back": null,
+			"tiles": [
+				{
+					"title": "About",
+					"icon": "icon icon-user",
+					"link": "#/about"
+				},
+				{
+					"title": "Education",
+					"icon": "icon icon-study",
+					"link": "#/education"
+				},
+				{
+					"title": "Skills",
+					"icon": "icon icon-wrench",
+					"link": "#/skills"
+				},
+				{
+					"title": "Projects",
+					"icon": "icon icon-code",
+					"link": "#/games",
+					"nextMenu": 1
+				},
+				{
+					"title": "Experience",
+					"icon": "icon icon-briefcase",
+					"link": "#/experience"
+				},
+				{
+					"title": "Resume",
+					"icon": "icon icon-profile",
+					"link": "#/resume"
+				},
+				{
+					"title": "Extra Curricular",
+					"icon": "icon icon-dribbble",
+					"link": "#/extra-curricular"
+				}
+			]
+		},
+		{
+			"title": "Projects",
+			"byline": null,
+			"logo": "images/icon-projects.jpg",
+			"back": "#/about",
+			"backMenuIndex": 0,
+			"tiles": [
+				{
+					"title": "Games",
+					"icon": "icon icon-steam",
+					"link": "#/projects/games"
+				},
+				{
+					"title": "Adobe Flash / AS3",
+					"icon": "icon icon-file-css",
+					"link": "#/projects/flash-as3"
+				},
+				{
+					"title": "Under-Graduate",
+					"icon": "icon icon-study",
+					"link": "#/projects/under-graduate",
+					"nextMenu": 2
+				},
+				{
+					"title": "BISAG",
+					"icon": "icon icon-image",
+					"link": "#/projects/games"
+				},
+				{
+					"title": "Personal",
+					"icon": "icon icon-user",
+					"link": "#/projects/personal"
+				},
+				{
+					"title": "Mobile App Dev",
+					"icon": "icon icon-mobile",
+					"link": "#/projects/mobile"
+				}
+			]
+		},
+		{
+			"title": "Under-Graduate",
+			"byline": null,
+			"logo": "images/icon-under-graduate.jpg",
+			"back": "#/projects",
+			"backMenuIndex": 1,
+			"tiles": [
+				{
+					"title": "E-Attend",
+					"icon": "icon icon-android",
+					"link": "#/projects/under-graduate/e-attend"
+				},
+				{
+					"title": "Compiler Design",
+					"icon": "icon icon-console",
+					"link": "#/projects/under-graduate/compiler-design"
+				},
+				{
+					"title": "Multimedia Computing",
+					"icon": "icon icon-cpu",
+					"link": "#/projects/under-graduate/multimedia-computing"
+				},
+				{
+					"title": "Parallel Computing",
+					"icon": "icon icon-cpu",
+					"link": "#/projects/under-graduate/parallel-computing"
+				},
+				{
+					"title": "BITS Online Notice Board",
+					"icon": "icon icon-html52",
+					"link": "#/projects/under-graduate/bits-online-notice-board"
+				},
+				{
+					"title": "Software Testing",
+					"icon": "icon icon-bug",
+					"link": "#/projects/under-graduate/software-testing"
+				}
+			]
+		}
+	]
+}
