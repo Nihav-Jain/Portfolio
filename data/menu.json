@@ -9,38 +9,45 @@
 				{
 					"title": "About",
 					"icon": "icon icon-user",
-					"link": "#/about"
+					"link": "#/about",
+					"colorClass": "about-color"
 				},
 				{
 					"title": "Education",
 					"icon": "icon icon-study",
-					"link": "#/education"
+					"link": "#/education",
+					"colorClass": "education-color"
 				},
 				{
 					"title": "Skills",
 					"icon": "icon icon-wrench",
-					"link": "#/skills"
+					"link": "#/skills",
+					"colorClass": "skills-color"
 				},
 				{
 					"title": "Projects",
 					"icon": "icon icon-code",
 					"link": "#/projects",
-					"nextMenu": 1
+					"nextMenu": 1,
+					"colorClass": "projects-color"
 				},
 				{
 					"title": "Experience",
 					"icon": "icon icon-briefcase",
-					"link": "#/experience"
+					"link": "#/experience",
+					"colorClass": "experience-color"
 				},
 				{
 					"title": "Resume",
 					"icon": "icon icon-profile",
-					"link": "#/resume"
+					"link": "#/resume",
+					"colorClass": "resume-color"
 				},
 				{
 					"title": "Extra Curricular",
 					"icon": "icon icon-dribbble",
-					"link": "#/extra-curricular"
+					"link": "#/extra-curricular",
+					"colorClass": "extra-color"
 				}
 			]
 		},
@@ -54,33 +61,39 @@
 				{
 					"title": "Games",
 					"icon": "icon icon-steam",
-					"link": "#/projects/games"
+					"link": "#/projects/games",
+					"colorClass": "projects-color"
 				},
 				{
 					"title": "Adobe Flash / AS3",
 					"icon": "icon icon-file-css",
-					"link": "#/projects/flash-as3"
+					"link": "#/projects/flash-as3",
+					"colorClass": "projects-color"
 				},
 				{
 					"title": "Under-Graduate",
 					"icon": "icon icon-study",
 					"link": "#/projects/under-graduate",
-					"nextMenu": 2
+					"nextMenu": 2,
+					"colorClass": "projects-color"
 				},
 				{
 					"title": "BISAG",
 					"icon": "icon icon-image",
-					"link": "#/projects/bisag"
+					"link": "#/projects/bisag",
+					"colorClass": "projects-color"
 				},
 				{
 					"title": "Personal",
 					"icon": "icon icon-user",
-					"link": "#/projects/personal"
+					"link": "#/projects/personal",
+					"colorClass": "projects-color"
 				},
 				{
 					"title": "Mobile App Dev",
 					"icon": "icon icon-mobile",
-					"link": "#/projects/mobile"
+					"link": "#/projects/mobile",
+					"colorClass": "projects-color"
 				}
 			]
 		},
@@ -94,32 +107,38 @@
 				{
 					"title": "E-Attend",
 					"icon": "icon icon-android",
-					"link": "#/projects/under-graduate/eattend"
+					"link": "#/projects/under-graduate/eattend",
+					"colorClass": "projects-color"
 				},
 				{
 					"title": "Compiler Design",
 					"icon": "icon icon-console",
-					"link": "#/projects/under-graduate/compiler-design"
+					"link": "#/projects/under-graduate/compiler-design",
+					"colorClass": "projects-color"
 				},
 				{
 					"title": "Multimedia Computing",
 					"icon": "icon icon-cpu",
-					"link": "#/projects/under-graduate/multimedia-computing"
+					"link": "#/projects/under-graduate/multimedia-computing",
+					"colorClass": "projects-color"
 				},
 				{
 					"title": "Parallel Computing",
 					"icon": "icon icon-cpu",
-					"link": "#/projects/under-graduate/parallel-computing"
+					"link": "#/projects/under-graduate/parallel-computing",
+					"colorClass": "projects-color"
 				},
 				{
 					"title": "BITS Online Notice Board",
 					"icon": "icon icon-html52",
-					"link": "#/projects/under-graduate/bits-online-notice-board"
+					"link": "#/projects/under-graduate/bits-online-notice-board",
+					"colorClass": "projects-color"
 				},
 				{
 					"title": "Software Testing",
 					"icon": "icon icon-bug",
-					"link": "#/projects/under-graduate/software-testing"
+					"link": "#/projects/under-graduate/software-testing",
+					"colorClass": "projects-color"
 				}
 			]
 		}

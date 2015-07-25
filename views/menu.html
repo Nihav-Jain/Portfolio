@@ -14,7 +14,7 @@
 							<span>Back</span>
 						</a>
 					</li>
-					<li ng-repeat="tile in menu.tiles">
+					<li ng-repeat="tile in menu.tiles" ng-class="tile.colorClass">
 						<a href="{{tile.link}}" ng-click="menuTileClicked($index)" class="skel-panels">
 							<span class="{{tile.icon}}">{{tile.title}}</span>
 						</a>
