@@ -2,10 +2,11 @@
   * @class Directives.AccountSelection
   * This is a directive implementing 'Hello-World'.
   */
-portfolioApp.directive('menuDirective',[function() {
+portfolioApp.directive('menuDirective',['menuService', function(menuService) {
   return {
       restrict: 'AE',
       replace: 'true',
+      require: '^menuService',
       templateUrl:'views/menu.html',
       controller: function($scope, $element, $http, $window, $anchorScroll) {
 
@@ -18,9 +19,12 @@ portfolioApp.directive('menuDirective',[function() {
         $scope.activeMenuIndex = 0;
         $scope.menuStatus = [];
 
-        $http.get('data/menu.json').success(function(data){
+        // $http.get('data/menu.json').success(function(data){
+        menuService.getMenuData().success(function(data){  
           // console.log(data);
           $scope.menus = data.menus;
+          menuService.menus = data.menus;
+          menuService.selectedTile = menuService.menus[0].tiles[0];
           var i;
           for(i=0;i<$scope.menus.length;i++){
             $scope.menuStatus.push(false);
@@ -33,12 +37,14 @@ portfolioApp.directive('menuDirective',[function() {
             $scope.activeMenuIndex = $scope.menus[$scope.activeMenuIndex].tiles[$index].nextMenu;
             $scope.updateMenuStatus();
           }
+          menuService.selectedTile = menuService.menus[$scope.activeMenuIndex].tiles[$index];
           $anchorScroll();
         };
 
         $scope.backClicked = function(){
           $scope.activeMenuIndex = $scope.menus[$scope.activeMenuIndex].backMenuIndex;
           $scope.updateMenuStatus();
+          menuService.selectedTile = menuService.menus[$scope.activeMenuIndex].tiles[0];
           $anchorScroll();
         };
 

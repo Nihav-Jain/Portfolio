@@ -1299,6 +1299,10 @@ pre{
     border-top: thin solid rgba(0, 0, 0, 0.1);
 }
 
+#main > section.one.about-header{
+	background-color: #333;
+}
+
 .about-color:hover {
 	background-color: #333;
 	color: #fff;
@@ -1311,6 +1315,10 @@ pre{
 	#nav ul li.about-color:hover a span::before{
 		color: #fff;
 	}
+
+#main > section.one.education-header{
+	background-color: #2ecc71;
+}
 
 .education-color:hover {
 	background-color: #2ecc71;
@@ -1325,6 +1333,10 @@ pre{
 		color: #fff;
 	}
 
+#main > section.one.skills-header{
+	background-color: #34495e;
+}
+
 .skills-color:hover{
 	background-color: #34495e;
 	color: #fff;
@@ -1337,6 +1349,10 @@ pre{
 	#nav ul li.skills-color:hover a span::before{
 		color: #fff;
 	}
+
+#main > section.one.projects-header{
+	background-color: #8e44ad;
+}
 
 .projects-color:hover{
 	background-color: #8e44ad;
@@ -1351,6 +1367,10 @@ pre{
 		color: #fff;
 	}
 
+#main > section.one.experience-header{
+	background-color: #f39c12;
+}
+
 .experience-color:hover{
 	background-color: #f39c12;
 	color: #fff;
@@ -1364,6 +1384,10 @@ pre{
 		color: #fff;
 	}
 
+#main > section.one.resume-header{
+	background-color: #2980b9;
+}
+
 .resume-color:hover{
 	background-color: #2980b9;
 	color: #fff;
@@ -1376,6 +1400,10 @@ pre{
 	#nav ul li.resume-color:hover a span::before{
 		color: #fff;
 	}
+
+#main > section.one.extra-header{
+	background-color: #1abc9c;
+}
 
 .extra-color:hover{
 	background-color: #1abc9c;
@@ -1395,5 +1423,13 @@ pre{
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s;
 	-ms-transition: 0.5s;
-	transition: 0.5s;		
+	transition: 0.5s;
+}
+
+#main > section.one {
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
 }
