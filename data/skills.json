@@ -102,11 +102,15 @@
 			]
 		},
 		{
-			"name": "Other Technical Skills",
+			"name": "Version Control",
 			"skills": [
 				{
-					"name": "OpenCV",
-					"value": "60%"
+					"name": "Git",
+					"value": "90%"
+				},
+				{
+					"name": "Subversion",
+					"value": "100%"
 				}
 			]
 		}
