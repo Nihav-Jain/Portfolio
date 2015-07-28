@@ -54,6 +54,15 @@ var portfolioApp = angular.module('portfolioApp', ['ngRoute', 'ngResource', 'ui.
 	}).state('software-testing', {
 		url: '/projects/under-graduate/software-testing',
 		templateUrl: 'views/projects/under-graduate/software-testing.html'
+	}).state('screen-recorder', {
+		url: '/projects/personal/screen-recorder',
+		templateUrl: 'views/projects/personal/screen-recorder.html'
+	}).state('portfolio', {
+		url: '/projects/personal/portfolio',
+		templateUrl: 'views/projects/personal/portfolio.html'
+	}).state('preference-filler', {
+		url: '/projects/personal/preference-filler',
+		templateUrl: 'views/projects/personal/preference-filler.html'
 	}).state('otherwise', {
 		url: '/404',
 		templateUrl: 'views/404.html'

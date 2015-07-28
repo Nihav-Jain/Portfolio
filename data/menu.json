@@ -60,7 +60,7 @@
 			"tiles": [
 				{
 					"title": "Games",
-					"icon": "icon icon-steam",
+					"icon": "fa fa-gamepad",
 					"link": "#/projects/games",
 					"colorClass": "projects-color"
 				},
@@ -87,7 +87,8 @@
 					"title": "Personal",
 					"icon": "icon icon-user",
 					"link": "#/projects/personal",
-					"colorClass": "projects-color"
+					"colorClass": "projects-color",
+					"nextMenu": 3
 				},
 				{
 					"title": "Mobile App Dev",
@@ -141,6 +142,34 @@
 					"colorClass": "projects-color"
 				}
 			]
+		},
+		{
+			"title": "Personal Projects",
+			"byline": null,
+			"logo": "images/icon-user.jpg",
+			"back": "#/projects",
+			"backMenuIndex": 1,
+			"tiles": [
+				{
+					"title": "Screen Recorder",
+					"icon": "icon icon-camera",
+					"link": "#/projects/personal/screen-recorder",
+					"colorClass": "projects-color"
+				},
+				{
+					"title": "Portfolio website",
+					"icon": "icon icon-html52",
+					"link": "#/projects/personal/portfolio",
+					"colorClass": "projects-color"
+				},
+				{
+					"title": "PS Preference Filler",
+					"icon": "fa fa-list-ol",
+					"link": "#/projects/personal/preference-filler",
+					"colorClass": "projects-color"
+				}
+			]
 		}
+
 	]
 }

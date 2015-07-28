@@ -18,7 +18,6 @@ portfolioApp.directive('headerDirective',['menuService', function(menuService) {
             var newClass = value.colorClass;
             newClass = newClass.substring(0, newClass.indexOf('-')+1);
             $scope.backgroundClass = newClass + "header";
-            console.log(newClass);
           }
         });
       }
