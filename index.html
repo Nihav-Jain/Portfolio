@@ -11,39 +11,48 @@
 	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="css/icons.css">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/skel.min.js"></script> 
-	<script src="js/skel-panels.min.js"></script> 
-<!--	<script type="text/javascript" src="js/main.js"></script> -->
-	<script src="js/init.js"></script>
-	<noscript>
-		<link rel="stylesheet" href="css/skel-noscript.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/style-wide.css" />
-	</noscript>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/navmenu.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 
-  <script src="lib/angular.min.js"></script>
-  <script src="lib/angular-route.min.js"></script>
-  <script src="lib/angular-ui-router.js"></script>
-  <script src="lib/angular-resource.min.js"></script>
+	<script src="js/jquery.min.js"></script>	
+	<script src="js/jasny-bootstrap.js"></script>
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-route.min.js"></script>
+	<script src="lib/angular-resource.min.js"></script>
+	<script src="lib/ui-bootstrap-tpls-0.13.1.min.js"></script>
 
-  <script src="js/app.js"></script>
-  <!-- controllers -->
-  <script src="js/services/menuService.js"></script>
-  <!-- controllers -->
-  <script src="js/controllers/skill-controller.js"></script>
-  <!-- directives -->
-  <script src="js/directives/menuDirective.js"></script>
-  <script src="js/directives/headerDirective.js"></script>
-
-  <!-- services -->
+	<script src="js/app.js"></script>
+	<!-- controllers 
+	<script src="js/services/menuService.js"></script>-->
+	<!-- controllers 
+	<script src="js/controllers/skill-controller.js"></script>-->
+	<!-- directives 
+	<script src="js/directives/menuDirective.js"></script>
+	<script src="js/directives/headerDirective.js"></script>
+	-->
+	<!-- services -->
 </head>
 <body>
-	<div menu-directive></div>
-	<div id="main">
-		<div header-directive></div>
-		<div ui-view></div>
-	</div>
-</body>
+	<div ng-include="'views/menu.html'"></div>
+
+    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+
+    <div class="container">
+      <div class="page-header">
+        <h1>Navmenu Template</h1>
+      </div>
+      <p class="lead">This example shows the navmenu element. If the viewport is <b>less than 992px</b> the menu will be placed the off canvas and will be shown with a slide in effect.</p>
+      <p>Also take a look at the examples for a navmenu with <a href="../navmenu-push">push effect</a> and <a href="../navmenu-reveal">reveal effect</a>.</p>
+    </div><!-- /.container --></body>
+
+
 </html>
