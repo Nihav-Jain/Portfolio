@@ -1,0 +1,98 @@
+html, body {
+  height: 100%;
+}
+body {
+  padding: 50px 0 0 0;
+}
+
+.navmenu {
+  padding-top: 50px;
+  box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);
+  background-color: #FFF;
+}
+
+.navbar {
+  display: block;
+  text-align: center;
+}
+.navbar-brand {
+  display: inline-block;
+  float: none;
+}
+.navmenu-brand {
+  text-align: right;
+}
+.brand-div {
+  position: relative;
+  margin: 1.75em 1.5em 1.5em 1.5em;
+  min-height: 48px;
+  display: inline-block;
+}
+.brand-div .brand-image {
+  left: 0;
+  top: 0;
+  display: inline-block;
+  float: left;
+}
+.brand {
+  border-radius: 50%;
+}
+.brand-div > h2 {
+  position: relative;
+  font-size: 1.8em;
+  float: right;
+}
+.brand-div > span {
+  float: right;
+}
+
+.navbar-toggle {
+  position: absolute;
+  float: left;
+  margin-left: 15px;
+}
+
+.nav.navmenu-nav > li{
+  border-bottom: thin solid rgba(0, 0, 0, 0.1);
+}
+
+.nav.navmenu-nav > li:first-child {
+  border-top: thin solid rgba(0, 0, 0, 0.1);
+}
+.container {
+  max-width: 100%;
+}
+
+
+.offScreenMenu{
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.offScreenMenu.open{
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+@media (min-width: 1px) {
+  .navbar-toggle {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0 0 0 300px;
+  }
+  .navmenu {
+    padding-top: 0;
+  }
+  .navbar {
+    display: none !important; /* IE8 fix */
+  }
+}
