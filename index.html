@@ -29,9 +29,7 @@
 	<script src="js/controllers/skill-controller.js"></script>-->
 	<!-- directives -->
 	<script src="js/directives/menuDirective.js"></script>
-	<!--<script src="js/directives/headerDirective.js"></script>
-	-->
-	<!-- services -->
+	<script src="js/directives/headerDirective.js"></script>
 </head>
 <body>
 	<!-- <div ng-include="'views/menu.html'"></div> -->
@@ -45,13 +43,12 @@
       <a class="navbar-brand" href="#">Project name</a>
     </div>
 
-    <div class="container">
-      <div class="page-header">
-        <h1>Navmenu Template</h1>
-      </div>
-      <p class="lead">This example shows the navmenu element. If the viewport is <b>less than 992px</b> the menu will be placed the off canvas and will be shown with a slide in effect.</p>
-      <p>Also take a look at the examples for a navmenu with <a href="../navmenu-push">push effect</a> and <a href="../navmenu-reveal">reveal effect</a>.</p>
-    </div><!-- /.container --></body>
-
-
+    <div class="container content-container">
+        <div header-directive></div>
+        <div class="container two">
+	      <p class="lead">This example shows the navmenu element. If the viewport is <b>less than 992px</b> the menu will be placed the off canvas and will be shown with a slide in effect.</p>
+	      <p>Also take a look at the examples for a navmenu with <a href="../navmenu-push">push effect</a> and <a href="../navmenu-reveal">reveal effect</a>.</p>
+        </div>
+    </div><!-- /.container -->
+</body>
 </html>
