@@ -407,3 +407,8 @@ div.page-header.one {
     .fa-inverse{color:#333}
     .fa-gamepad:before{content:"\f11b"}
     .fa-list-ol:before{content:"\f0cb"}
+
+@media (max-width: 991px){
+.offcanvas-sm {
+     display: inline-block;
+}

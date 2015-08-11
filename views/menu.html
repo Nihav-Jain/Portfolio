@@ -1,45 +1,4 @@
 <div>
-<!-- <div ng-show="navViewCondition()">
-	<div id="header" class="skel-panels-fixed absPos offScreenMenu" ng-repeat="menu in menus" ng-class="{open: getMenuStatus($index)}">
-		<div class="top">
-			<div id="logo">
-				<span class="image"><img src="{{menu.logo}}"></span>
-				<h1 id="title">{{menu.title}}</h1>
-				<span ng-if="menu.byline" class="byline">{{menu.byline}}</span>
-			</div>
-
-			<nav id="nav">
-				<ul>
-					<li ng-if="menu.back">
-						<a href="{{menu.back}}" id="back" class="skel-panels" ng-click="backClicked()">
-							<span>Back</span>
-						</a>
-					</li>
-					<li ng-repeat="tile in menu.tiles" ng-class="tile.colorClass">
-						<a href="{{tile.link}}" ng-click="menuTileClicked($index)" class="skel-panels">
-							<span class="{{tile.icon}}">{{tile.title}}</span>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div>
- -->
-<!-- 
-    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
-      <div class="brand-div">
-	      <span class="brand-image"><img src="images/nj-profile.jpg" class="brand"></span>
-	      <h2><strong>Nihav Jain</strong></h2>
-	      <span class="byline">Game Programmer</span>
-      </div>
-      <ul class="nav navmenu-nav">
-        <li><a href="" ng-click="openMenu()">Slide in</a></li>
-        <li><a href="">Push</a></li>
-        <li><a href="">Reveal</a></li>
-        <li><a href="">Off canvas navbar</a></li>
-      </ul>
-    </div> -->
     <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm offScreenMenu" ng-repeat="menu in menus" ng-class="{open: getMenuStatus($index)}">
       <div class="brand-div">
 	      <span class="brand-image"><img src="{{menu.logo}}" class="brand"></span>
