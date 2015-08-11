@@ -11,7 +11,7 @@ portfolioApp.directive('menuDirective',['menuService', function(menuService) {
       controller: function($scope, $element, $http, $window, $anchorScroll) {
 
         $scope.newMenu = false;
-        
+        $scope.backgroundClass = "about-header";
         $scope.openMenu = function(){
           $scope.newMenu = !$scope.newMenu;
         };

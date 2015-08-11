@@ -17,8 +17,9 @@ body,input,textarea,select
 
 .navmenu {
   padding-top: 50px;
-  box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);
+  /*box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);*/
   background-color: #FFF;
+  border-right: thin solid rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -109,16 +110,16 @@ body,input,textarea,select
   }
 }
 
-/****** Header and Menu buttons **********/
-
-/*@media (min-width: 1200px){
-  .container {
-    width: 0px;
-  }
+@media (max-width: 991px) {
   .container.content-container{
-    width: 100%;
+    margin-top: -50px;
   }
-}*/
+  .page-header{
+    padding: 15px 0px 45px 0px;
+  }
+}
+
+/****** Header and Menu buttons **********/
 
 .container.content-container{
   padding-left: 0px;
@@ -136,7 +137,7 @@ body,input,textarea,select
 }
 
 .page-header{
-  padding: 40px 0px 40px 0px;
+  padding: 45px 0px 45px 0px;
   margin: 0px 0px 20px 0px;
   color: #FFF;
 }
@@ -154,7 +155,30 @@ body,input,textarea,select
   font-size: 0.5em;
 }
 
+.navbar.navbar-default.navbar-inverse.hidden-md.hidden-lg{
+  background-color: #333;
+  border: none;
+}
+
+@media (max-width: 991px) {
+  .toggle-btn {
+      position: absolute;
+      left: 10px;
+      top: 5px;
+      width: 40px;
+      height: 40px;
+      background: rgba(128,136,144,0.5) url('images/toggle.svg') center center no-repeat;
+      border-radius: 0.1em;
+      margin: 0.25em;
+      cursor: pointer;
+  }  
+}
+
+/********* Header Colors ******/
 div.page-header.one.about-header{
   background: #333;
 }
 
+div.page-header.one.education-header{
+  background-color: #2ecc71;
+}
