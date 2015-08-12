@@ -12,7 +12,7 @@
 			</a>
 		</li>
       	<li ng-repeat="tile in menu.tiles" ng-class="tile.colorClass">
-			<a href="" ng-click="menuTileClicked($index)">
+			<a href="{{tile.link}}" ng-click="menuTileClicked($index)">
 				<span class="{{tile.icon}}">{{tile.title}}</span>
 			</a>
       	</li>

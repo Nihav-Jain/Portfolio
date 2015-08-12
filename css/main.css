@@ -17,6 +17,74 @@ body,input,textarea,select
   -webkit-text-stroke: 0.15px;
 }
 
+
+
+.percent-bar {
+  position: relative;
+  display: block;
+  height: 50px;
+  margin-bottom: 2px;
+  background: #34495e;
+  width: 70%;
+}
+
+.percent-bar .skill {
+  top: 0;
+  left: 15px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.percent-bar span {
+  display: block;
+  position: absolute;
+  font-size: .85em;
+  line-height: 50px;
+  outline: 0;
+  /*background: #ccc;*/
+  color: #222;
+}
+
+.percent-bar .percent-bg {
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #ccc;
+  z-index: 1;
+  -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+
+.card {
+  padding:1.5rem;
+  margin:0 1rem 1rem;
+  border-top: thin solid rgba(50,50,50,0.5) ;
+  border-right: medium solid rgba(0,0,0,0.15);
+  border-bottom: medium solid rgba(0,0,0,0.15);
+  border-left: thin solid rgba(50,50,50,0.5) ;
+}
+
+.custom.trophy li {
+  padding-left: 2em ;
+}
+
+.custom.trophy li:before {
+  content: "\e609";
+  font-family: 'icomoon';
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+  font-size: 1em;
+}
+
+pre{
+  font-size: 0.75em;
+}
+
+.no-box-shadow{
+  box-shadow: none;
+}
+
 .navmenu {
   padding-top: 50px;
   /*box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);*/
@@ -136,6 +204,36 @@ body,input,textarea,select
 
 .container.two{
   margin-left: 15px;
+  font-size: 0.85em;
+  padding-top: 20px;
+}
+
+.container.two h2 {
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.container.two > div > article:nth-child(n+1) {
+  margin-top: 40px;
+}
+
+.container.two > div > article:not(:last-child){
+  border-bottom: medium solid rgba(0,0,0,0.15);
+}
+.container.two > div > article:last-child {
+  margin-bottom: 40px;
+}
+
+.container.two > div > article > h2 {
+  font-size: 2em;
+}
+
+.container.two > div > article > table {
+  margin-top: 20px;
+}
+
+.container.two > div > article > table > tbody > tr > td:nth-child(2) {
+  padding-left: 30px;
 }
 
 .page-header{
@@ -409,6 +507,18 @@ div.page-header.one {
     .fa-list-ol:before{content:"\f0cb"}
 
 @media (max-width: 991px){
-.offcanvas-sm {
-     display: inline-block;
+  .offcanvas-sm {
+       display: inline-block;
+  }
+}
+
+
+.class404{
+  text-align: center;
+}
+
+.centerAlign{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

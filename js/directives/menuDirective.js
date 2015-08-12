@@ -89,7 +89,6 @@ portfolioApp.directive('menuDirective',['menuService', function(menuService) {
           for(i=0;i<$scope.menuStatus.length;i++){
             $scope.menuStatus[i] = false;
           }
-            // TODO: refactor with single conditional statement
           if(changeInMenuLevel || !$scope.mobileView){
             $scope.menuStatus[$scope.activeMenuIndex] = true;
           }
