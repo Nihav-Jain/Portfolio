@@ -35,6 +35,10 @@
 				{
 					"name": "Starling Framework (AS3)",
 					"value": "60%"
+				},
+				{
+					"name": "HTML5 Canvas",
+					"value": "70%"
 				}
 			]
 		},
