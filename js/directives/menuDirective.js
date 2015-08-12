@@ -49,7 +49,10 @@ portfolioApp.directive('menuDirective',['menuService', function(menuService) {
         });
         
         $element.data("menuDirective", true);
-        angular.element($document[0].body).on('click', function(e){
+        angular.element($document[0].body).on('click', touchOrClick);
+        angular.element($document[0].body).on('touchstart', touchOrClick);
+
+        function touchOrClick(e){
             var inMenuDirective = angular.element(e.target).inheritedData('menuDirective');
             var onToggleBtn = angular.element(e.target).inheritedData('toggle-btn');
             if(!(inMenuDirective || onToggleBtn)){
@@ -66,8 +69,7 @@ portfolioApp.directive('menuDirective',['menuService', function(menuService) {
                   }
                 }
             }
-        });
-
+        }
         $scope.toggleBtnClicked = function(){
             $scope.menuStatus[$scope.activeMenuIndex] = true;
             $scope.$apply();
