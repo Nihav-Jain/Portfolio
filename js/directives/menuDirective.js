@@ -8,24 +8,17 @@ portfolioApp.directive('menuDirective',['menuService', function(menuService) {
       replace: 'true',
       require: '^menuService',
       templateUrl:'views/menu.html',
-      controller: function($scope, $element, $http, $window, $anchorScroll, $document) {
+      controller: function($scope, $element, $http, $window, $anchorScroll, $document, $location) {
 
         $scope.newMenu = false;
         $scope.backgroundClass = "about-header";
-
-        // var w = angular.element($window);
-        // w.bind('resize', function(){
-        //   $scope.$apply();
-        // });
-
 
         $scope.menus = [];
         $scope.activeMenuIndex = 0;
         $scope.menuStatus = [];
         $scope.mobileView = false;
-        // $http.get('data/menu.json').success(function(data){
+
         menuService.getMenuData().success(function(data){  
-          // console.log(data);
           $scope.menus = data.menus;
           menuService.menus = data.menus;
           menuService.selectedTile = menuService.menus[0].tiles[0];
@@ -38,6 +31,18 @@ portfolioApp.directive('menuDirective',['menuService', function(menuService) {
           }
           else{
             $scope.mobileView = true;
+          }
+          var j;
+          var curUrl = "#" + $location.path();
+          for(i=0;i<$scope.menus.length;i++){
+            for(j=0;j<$scope.menus[i].tiles.length;j++){
+                if(curUrl == $scope.menus[i].tiles[j].link){
+                  var newClass = $scope.menus[i].tiles[j].colorClass;
+                  newClass = newClass.substring(0, newClass.indexOf('-')+1);
+                  $scope.backgroundClass = newClass + "header";
+                  break;
+                }
+            }
           }
         });
         
