@@ -40,6 +40,8 @@ portfolioApp.directive('menuDirective',['menuService', function(menuService) {
                   var newClass = $scope.menus[i].tiles[j].colorClass;
                   newClass = newClass.substring(0, newClass.indexOf('-')+1);
                   $scope.backgroundClass = newClass + "header";
+                  $scope.activeMenuIndex = i;
+                  $scope.updateMenuStatus(j, true);
                   break;
                 }
             }
