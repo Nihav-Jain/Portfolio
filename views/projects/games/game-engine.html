@@ -1,0 +1,71 @@
+<h2>C++ Game Engine</h2>
+<article>
+
+	<div>
+        <header class="">
+          <a href="http://github.com/" target="_blank" class="logo"></a>
+        </header>
+        <template if="{{info.error}}"></template>
+        <template if="{{!info.error}}"></template>
+          <section class="github-repo-card-title">
+            <h3>
+              <a class="owner" href="{{gitRepoData.owner.html_url}}" target="_blank" title="nihavjain">Nihav-Jain</a>
+              /
+              <a class="repo" href="{{gitRepoData.html_url}}" target="_blank" title="GeometryWars">Game Engine</a>
+            </h3>
+            <div class="github-stats">
+              <a class="watchers" title="See watchers" href="https://github.com/Nihav-Jain/GeometryWars/watchers" target="_blank">{{gitRepoData.watchers_count}}</a>
+              <a class="forks" title="See Commits" href="https://github.com/Nihav-Jain/GeometryWars/commits/engine" target="_blank">{{gitCommitData}}</a>
+			
+            </div>
+          </section><!-- /.github-repo-card-title -->
+          <section class="github-repo-card-content">
+            <p class="description">{{gitRepoData.description}}</p>
+            <p class="link"><a href="{{gitRepoData.html_url}}" target="_blank">{{gitRepoData.html_url}}</a></p>
+          </section><!-- /.github-repo-card-content -->
+          <section class="github-repo-card-download">
+            <div class="updated">Latest commit on {{latestCommit | date}}</div>
+            <a class="download" title="Get an archive of this repository" href="https://github.com/Nihav-Jain/GeometryWars/zipball/master">Download as Zip</a>
+          </section>
+        
+      </div>
+
+
+	<div>
+		<div class="skill-border small-font"><span>C++</span></div>
+		<div class="skill-border small-font"><span>XML</span></div>
+	</div>
+	<h4>(January 2016 - April 2016)</h4>
+	<p>
+		Developed a data driven game engine and a supporting scripting language for it from scratch in C++11 -  
+	</p>
+	<ul>
+		<li>Implemented arithmetic and logical expressions, function calls, loops and branching statements in the scripting language</li>
+		<li>Developed my own Runtime Type Information system with the ability to go up and down the class hierarchy</li>
+		<li>Implemented an asynchronous event system, object factory and a runtime dynamic data-type storage system</li>
+		<li>Coded STL replacements for common data structures like Hashmap, Vector, Stack, Linked List and Graph.</li> 
+	</ul>
+<br/>
+	<h3>Modules</h3>
+	<ul>
+		<li>Templated Data Structures
+			<ul>
+				<li>Singly Linked List</li>
+				<li>Vector</li>
+				<li>Stack</li>
+				<li>HashMap</li>
+				<li>Graph (with a Depth-first, Breadth-first and a Simple Traversor)</li>
+			</ul>
+		</li>
+		<li><strong>Datum</strong> - a run-time dynamic data-type storage (currently supports int, float, string, vector4, matrix4x4, Scope (Table) and RTTI (base class of all foundation classes in the Engine))</li>
+		<li><strong>Scope</strong> - forms a dynamic heirarchical database for name-value pairs</li>
+		<li><strong>Attributed</strong> - base class for "glue" code which links Scopes to native class/object and provides utility facilities such as prescribing the contents of a Scope table at compile time</li>
+		<li><strong>XmlParseMaster</strong> - XML parser which follows the Chain Of Responsibility pattern to read the XML script and pass it on to relevant helpers for parsing</li>
+		<li><strong>IXmlParseHelper</strong> - abstract class which forms the interface for helpers of XmlParseMaster, specializations include helpers to parse the XML and create Scopes containing integers, floats, strings, vectors, matrices and nested Scopes</li>
+		<li><strong>Factory</strong> - a templated object Factory</li>
+		<li><strong>World, Sector, Entity</strong> - forms the Game heirarchy where Sectors can be loosely considered as "levels/maps" and Entities can be equivalent to Actors / GameObjects</li>
+		<li><strong>Action</strong> - a loose equivalent of a "Game Component", can be used to execute specialized functions on Entities. Specialized Actions currently implemented include a switch-case block and an expression which can be used to write simple arithmetic evaluation expressions for the scripting language</li>
+		<li><strong>Event</strong> - implements the observer pattern for publisher-subscriber communication and implements a time-based dispath queue</li>
+		<li><strong>Reaction</strong> - scriptable event publishers and subscribers</li>
+	</ul>
+</article>

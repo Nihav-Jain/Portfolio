@@ -28,7 +28,6 @@
 					"title": "Projects",
 					"icon": "icon icon-code",
 					"link": "#/projects",
-					"nextMenu": 1,
 					"colorClass": "projects-color"
 				},
 				{

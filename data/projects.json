@@ -1,0 +1,262 @@
+[
+	{
+		"title": "Games",
+		"rows": [
+			[
+				{
+					"class": "col-xs col-sm-6 col-md-6",
+					"href": "#/projects/games/thechanneler",
+					"title": "The Channeler",
+					"tags": ["Eye Tracking", "UE4", "C++"],
+					"img_src": "images/projects/ChannelerCoverPic.jpg"
+				},				
+				{
+					"class": "col-xs col-sm-6 col-md-6",
+					"href": "#/projects/games/game-engine",
+					"title": "C++ Data Driven Game Engine",
+					"tags": ["C++"],
+					"img_src": "images/projects/automation_tech.jpg"
+				}
+			],
+			[
+				{
+					"class": "col-xs col-sm-6 col-md-6",
+					"href": "#/projects/games/angry-birds",
+					"title": "Angry Birds (Clone)",
+					"tags": ["C++", "OpenGL", "PC", "DirectX", "XBOX"],
+					"img_src": "images/projects/angry-birds.jpg"
+				},				
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/games/d3",
+					"title": "Dystopian Drill Divers",
+					"tags": ["Unity", "C#", "Android"],
+					"img_src": "images/projects/d3.jpg"
+				},
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/games/pipeland",
+					"title": "Pipeland Waterworks",
+					"tags": ["Unity", "C#", "Android"],
+					"img_src": "images/projects/pipeland.jpg"
+				}
+			],
+			[
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/games/space-between",
+					"title": "Space Between",
+					"tags": ["Unity", "C#", "PC"],
+					"img_src": "images/projects/space-between.jpg"
+				},				
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/games/kite-fite",
+					"title": "Kite Fite",
+					"tags": ["Adobe Flash", "Box2D", "Web", "PC"],
+					"img_src": "images/projects/kite-fite.jpg"
+				},
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/games/thechanneler-vr",
+					"title": "The Channeler - VR Prototype",
+					"tags": ["Unity", "C#", "Oculus"],
+					"img_src": "images/projects/thechanneler-vr.jpg"
+				},
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/games/relativity",
+					"title": "Everything is Relative",
+					"tags": ["Unity", "C#", "PC"],
+					"img_src": "images/projects/relativity.jpg"
+				}
+			],
+			[
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/games/interactive-68k",
+					"title": "Interactive 68k Game",
+					"tags": ["68000 Assembly"],
+					"img_src": "images/projects/68k.jpg"
+				},
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/games/pacman",
+					"title": "Pacman",
+					"tags": ["Adobe Flash", "ActionScript 3.0"],
+					"img_src": "images/projects/pacman.jpg"
+				},
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/games/lacuna-2013",
+					"title": "Lacuna 2013",
+					"tags": ["Adobe Flash", "Box2D", "Web", "PC"],
+					"img_src": "images/projects/lacuna-2013.jpg"
+				},
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/games/lacuna-2012",
+					"title": "Lacuna 2012",
+					"tags": ["Adobe Flash", "Box2D", "Web", "PC"],
+					"img_src": "images/projects/lacuna-2012.jpg"
+				}
+			]				
+		]
+	},
+	{
+		"title": "Graduate Programming Assignments",
+		"rows": [
+			[
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "https://github.com/Nihav-Jain/Boggle",
+					"title": "Boggle",
+					"tags": ["C++"],
+					"img_src": "images/projects/boggle.jpg"
+				},				
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "https://github.com/Nihav-Jain/Compressor-Decompressor",
+					"title": "Compressor-Decompressor",
+					"tags": ["C"],
+					"img_src": "images/projects/zipFolder.jpg"
+				},
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "https://github.com/Nihav-Jain/C-Assembly-Assignment",
+					"title": "C + Assembly",
+					"tags": [],
+					"img_src": "images/projects/endianness.jpg"
+				},				
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "https://github.com/Nihav-Jain/68000-Assembly",
+					"title": "68k Assembly",
+					"tags": [],
+					"img_src": "images/projects/assembly.jpg"
+				}
+			]		
+		]
+	},
+	{
+		"title": "Internship Projects",
+		"rows": [
+			[
+				{
+					"class": "col-xs col-sm-6 col-md-6",
+					"href": "#/projects/bisag",
+					"title": "BISAG",
+					"tags": ["Java", "Image Processing"],
+					"img_src": "images/projects/height.jpg"
+				},				
+				{
+					"class": "col-xs col-sm-6 col-md-6",
+					"href": "#/projects/globallogic",
+					"title": "Global Logic Inc.",
+					"tags": ["Android", "iOS", "PhoneGap"],
+					"img_src": "images/projects/phone_gap_dev.png"
+				}
+			]		
+		]
+	},
+	{
+		"title": "Under-Graduate Projects",
+		"rows": [
+			[
+				{
+					"class": "col-xs col-sm-6 col-md-6",
+					"href": "#/projects/under-graduate/eattend",
+					"title": "EAttend",
+					"tags": ["Android", "OpenCV", "Face Recognition"],
+					"img_src": "images/projects/face.jpg"
+				},				
+				{
+					"class": "col-xs col-sm-6 col-md-6",
+					"href": "#/projects/under-graduate/compiler-design",
+					"title": "Compiler Design",
+					"tags": ["C", "Compiler"],
+					"img_src": "images/projects/compiler.jpg"
+				}
+			],
+			[
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/under-graduate/multimedia-computing",
+					"title": "Real time rendering of motion through clouds",
+					"tags": ["ActionScript", "Stage3D"],
+					"img_src": "images/projects/clouds.jpg"
+				},				
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/under-graduate/parallel-computing",
+					"title": "Parallel Computing",
+					"tags": ["C", "CUDA"],
+					"img_src": "images/projects/parallelProblem.jpg"
+				},
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/under-graduate/bits-online-notice-board",
+					"title": "BITS Online Notice Board",
+					"tags": ["Javascipt", "PHP", "MySQL"],
+					"img_src": "images/projects/nalanda.png"
+				},				
+				{
+					"class": "col-xs col-sm-3 col-md-3",
+					"href": "#/projects/under-graduate/software-testing",
+					"title": "Software Testing",
+					"tags": [],
+					"img_src": "images/projects/software-testing.jpg"
+				}
+			]		
+		]
+	},
+	{
+		"title": "Websites",
+		"rows": [
+			[
+				{
+					"class": "col-xs col-sm-6 col-md-6",
+					"href": "#/projects/websites/oasis-2012",
+					"title": "Oasis 2012",
+					"tags": ["Adobe Flash", "ActionScript3.0"],
+					"img_src": "images/projects/oasis-2012.jpg"
+				},				
+				{
+					"class": "col-xs col-sm-6 col-md-6",
+					"href": "#/projects/websites/oasis-2012-intro",
+					"title": "Oasis 2012 - Intro",
+					"tags": ["Adobe Flash", "ActionScript3.0"],
+					"img_src": "images/projects/oasis-2012-intro.jpg"
+				}
+			]
+		]
+	},
+	{
+		"title": "Personal Projects",
+		"rows": [
+			[
+				{
+					"class": "col-xs col-sm-6 col-md-6",
+					"href": "#/projects/personal",
+					"title": "Personal Projects",
+					"tags": [],
+					"img_src": "images/projects/personalprojects.jpg"
+				}
+			]
+		]
+	},
+	{
+		"title": "Mobile Apps",
+		"rows": [
+			[
+				{
+					"class": "col-xs col-sm-6 col-md-6",
+					"href": "#/projects/mobile",
+					"title": "Mobile Apps",
+					"tags": ["Android", "iOS", "PhoneGap"],
+					"img_src": "images/projects/phone_gap_dev.png"
+				}
+			]
+		]
+	}
+]

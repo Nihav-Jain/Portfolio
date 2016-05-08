@@ -1,0 +1,29 @@
+{
+	"games": [
+		{
+			"media": "images/404.png",
+			"actualWidth": 300,
+			"actualHeight": 300
+		},
+		{
+			"media": "images/GameEngine.jpg",
+			"actualWidth": 242,
+			"actualHeight": 242
+		},
+		{
+			"media": "images/oasis-splashscreen.png",
+			"actualWidth": 300,
+			"actualHeight": 489
+		},
+		{
+			"media": "images/height.jpg",
+			"actualWidth": 600,
+			"actualHeight": 553
+		},
+		{
+			"media": "images/weapon-creation-tool.png",
+			"actualWidth": 857,
+			"actualHeight": 483
+		}
+	]
+}

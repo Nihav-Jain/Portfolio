@@ -1,0 +1,22 @@
+ <div class="container">
+  
+<article ng-repeat="category in projects">
+    <h2>{{category.title}}</h2>
+    <div class="row" ng-repeat="row in category.rows">
+        <div ng-repeat="col in row" class="{{col.class}}">
+            <a href="{{col.href}}">
+                <div class="thumbnail project-thumbnail">
+                <div class="project-caption-bkgrd"></div>
+                    <div class="caption project-caption">
+                        <h4>{{col.title}}</h4>
+                        <h5>{{col.tags.join(' | ')}}</h5>
+                    </div>
+                    <img ng-src="{{col.img_src}}">
+                </div>
+            </a>
+        </div>
+    </div>
+</article>
+
+
+</div>

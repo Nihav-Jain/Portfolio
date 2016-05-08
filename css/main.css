@@ -241,6 +241,9 @@ pre{
 .container.two > div > article:last-child {
   margin-bottom: 40px;
 }
+.container > article:not(:last-child){
+  border-bottom: medium solid rgba(0,0,0,0.15);
+}
 
 .container.two > div > article > h2 {
   font-size: 2em;
@@ -422,11 +425,11 @@ div.page-header.one.extra-header{
 }
 
 .nav.navmenu-nav li a span::before{
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  transition: 0.5s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
   color: #333;
   float: left;
   margin-left: 20px;
@@ -434,11 +437,11 @@ div.page-header.one.extra-header{
 }
 
 .nav.navmenu-nav li a {
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  transition: 0.5s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
   font-size: 0.8em;
   color: #333;
   text-align: right;
@@ -493,6 +496,7 @@ div.page-header.one {
       font-style: normal;
       font-weight: normal;
       line-height: 1;
+      margin-right: 0.6em;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
     }
@@ -539,4 +543,8 @@ div.page-header.one {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.skill-border.small-font{
+  font-size: 0.8em;
 }
